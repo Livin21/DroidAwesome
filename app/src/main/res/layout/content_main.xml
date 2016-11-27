@@ -21,7 +21,7 @@
         android:textSize="65sp"
         android:textColor="#0f0"
         android:gravity="center"
-        android:text="&#xf17b;"/>
+        android:text="@string/android_icon_font_awesome"/>
 
     <com.lmntrx.livin.library.droidawesome.DroidAwesomeTextView
         android:layout_width="wrap_content"
