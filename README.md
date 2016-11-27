@@ -59,6 +59,8 @@ dependencies {
         android:text="@string/android_icon_font_awesome"/>
 ```
 
+### Tip: For smooth rendering in android studio one might have to include [font-awesome.ttf](https://github.com/Livin21/DroidAwesome/blob/master/droid-awesome/src/main/assets/fonts/font-awesome.ttf?raw=true) in assets/fonts/ ###
+
 ## ChangeLog ##
 
 ### 1.0.1 ###
