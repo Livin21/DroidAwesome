@@ -1,4 +1,4 @@
-# ![picture alt](https://lh4.googleusercontent.com/aZYMAdUdEazOLA1YN3dJxCu3_p_KOxJBUsbPuCTPJaRj85x-dZdV0f3HIeH1jFVLKfoVcWRK=w1313-h654 "Icon") DroidAwesome
+# [![icon-96x96.png](https://s18.postimg.org/tboj9r74p/icon_96x96.png)](https://postimg.org/image/efq025vpx/) DroidAwesome
 Custom Views that support FontAwesome directly
 
 [ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [ ![Download](https://jitpack.io/v/Livin21/DroidAwesome.svg "jitpack.io") ](https://jitpack.io/#Livin21/DroidAwesome/v1.1.0) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Livin21/droidawesome)
@@ -17,7 +17,7 @@ Custom Views that support FontAwesome directly
 * FloatingActionButton
 
 ## Screenshot ##
-![Screenshot 1](https://lh4.googleusercontent.com/TN3y4ipqjTAHQJKV7Ok88uobRM1QZIthvYJqgA4BQ4g9I5DsPCMmgBE38nc8Y8SSsq5YdwUqrsztcgM=w971-h654-rw "Screenshot 1") ![Screenshot 2](https://lh5.googleusercontent.com/r12ZN1GfXaamCcgsoVKEftdSCusbF57Qh4ByeKSbvU7pd0WMPqeRi0LOj2dkUsNLjsPHNMvV=w1313-h654-rw "Screenshot 2")
+[![Screenshot_1480200614.png](https://s11.postimg.org/5qpcgonbn/Screenshot_1480200614.png)](https://postimg.org/image/63gqmv5lb/) [![Screenshot_1480244308.png](https://s17.postimg.org/8bkbl36vj/Screenshot_1480244308.png)](https://postimg.org/image/xucny3qff/)
 
 ## Gradle Setup ##
 Add the following code snippet to module/build.gradle
