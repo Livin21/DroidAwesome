@@ -15,10 +15,28 @@ Custom Views that support FontAwesome directly
 ![picture alt](https://lh4.googleusercontent.com/TN3y4ipqjTAHQJKV7Ok88uobRM1QZIthvYJqgA4BQ4g9I5DsPCMmgBE38nc8Y8SSsq5YdwUqrsztcgM=w971-h654-rw "Screenshot")
 
 ## Gradle Setup ##
-To be added soon
+Add the following code snippet to module/build.gradle
+```
+repositories {
+    maven {
+        url 'https://dl.bintray.com/lmntrx-tech/DroidAwesome'
+    }
+}
+dependencies {
+    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.0.1'
+}
+```
+
 
 ## Maven Setup ##
-To be added soon
+```
+<dependency>
+  <groupId>com.lmntrx.livin.library.droidawesome</groupId>
+  <artifactId>droid-awesome</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
 
 ## How to use it? ##
 1. Define required icons in res/values/icons.xml
@@ -40,6 +58,8 @@ To be added soon
 ```
 
 ## ChangeLog ##
+### 1.0.1 ###
+* Minor Bug Fix
 ### 1.0.0 ###
 * Added custom TextView
 * Added custom AutoComplete TextView
