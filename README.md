@@ -17,7 +17,7 @@ Custom Views that support FontAwesome directly
 * FloatingActionButton
 
 ## Screenshot ##
-[![Screenshot_1480200614.png](https://s21.postimg.org/v3hv6pw1j/Screenshot_1480200614.png)](https://postimg.org/image/6zr3ifdkj/) [![Screenshot_1480244308.png](https://s16.postimg.org/5iz1mon39/Screenshot_1480244308.png)](https://postimg.org/image/v1rdzp6n5/)
+[![Screenshot_1480200614.png](https://s15.postimg.org/ddlxu3m4b/Screenshot_1480200614.png)](https://postimg.org/image/ktl7fw9tj/) [![Screenshot_1480244308.png](https://s18.postimg.org/48tqtc84p/Screenshot_1480244308.png)](https://postimg.org/image/9k8ne1u79/)
 
 ## Gradle Setup ##
 Add the following code snippet to module/build.gradle
