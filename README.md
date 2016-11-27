@@ -22,11 +22,6 @@ Custom Views that support FontAwesome directly
 ## Gradle Setup ##
 Add the following code snippet to module/build.gradle
 ```
-repositories {
-    maven {
-        url 'https://dl.bintray.com/lmntrx-tech/DroidAwesome'
-    }
-}
 dependencies {
     compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.0'
 }
@@ -44,7 +39,7 @@ dependencies {
 ```
 
 ## How to use it? ##
-1. Define required icons in res/values/icons.xml
+* Define required icons in res/values/icons.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
   <resources>
@@ -52,7 +47,7 @@ dependencies {
      <string name="not_allowed_font_awesome">&#xf05e;</string>
   </resources>
 ```
-2. Now use custom view in activity.xml
+* Now use custom view in activity.xml
 ```
 <com.lmntrx.livin.library.droidawesome.DroidAwesomeAutoCompleteTextView
         android:layout_width="wrap_content"
