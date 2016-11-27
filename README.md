@@ -1,7 +1,7 @@
 # ![picture alt](https://lh4.googleusercontent.com/aZYMAdUdEazOLA1YN3dJxCu3_p_KOxJBUsbPuCTPJaRj85x-dZdV0f3HIeH1jFVLKfoVcWRK=w1313-h654 "Icon") DroidAwesome
 Custom Views that support FontAwesome directly
 
-[ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [ ![Download](https://jitpack.io/v/Livin21/DroidAwesome.svg "jitpack.io") ](https://jitpack.io/#Livin21/DroidAwesome/v1.0.1) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Livin21/droidawesome)
+[ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [ ![Download](https://jitpack.io/v/Livin21/DroidAwesome.svg "jitpack.io") ](https://jitpack.io/#Livin21/DroidAwesome/v1.1.0) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Livin21/droidawesome)
 
 ## Views Supported: ##
 * TextView
@@ -12,21 +12,30 @@ Custom Views that support FontAwesome directly
 * Radio Button
 * Button
 * Toggle Button
+* ImageView
+* ImageButton
+* FloatingActionButton
 
 ## Screenshot ##
-![picture alt](https://lh4.googleusercontent.com/TN3y4ipqjTAHQJKV7Ok88uobRM1QZIthvYJqgA4BQ4g9I5DsPCMmgBE38nc8Y8SSsq5YdwUqrsztcgM=w971-h654-rw "Screenshot")
+![Screenshot 1](https://lh4.googleusercontent.com/TN3y4ipqjTAHQJKV7Ok88uobRM1QZIthvYJqgA4BQ4g9I5DsPCMmgBE38nc8Y8SSsq5YdwUqrsztcgM=w971-h654-rw "Screenshot 1") ![Screenshot 2](https://lh3.googleusercontent.com/m6FJIbRhqD3EmRe-rTrOA07DjIcJ4MO3FFJImG8icP8fprP_1MQXGqjANScHDwnF5ORi3nMt=w1313-h654-rw "Screenshot 2")
 
 ## Gradle Setup ##
 Add the following code snippet to module/build.gradle
 ```
+  
 repositories {
+
     maven {
         url 'https://dl.bintray.com/lmntrx-tech/DroidAwesome'
     }
+
 }
 dependencies {
+
     compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.0.1'
+
 }
+
 ```
 
 
@@ -41,15 +50,19 @@ dependencies {
 ```
 
 ## How to use it? ##
-* Define required icons in res/values/icons.xml
+1. Define required icons in res/values/icons.xml
 ```
+
 <?xml version="1.0" encoding="utf-8"?>
   <resources>
-     <string name="android_icon_font_awesome">&#xf17b;</string> // http://fontawesome.io/cheatsheet/
+     <string name="android_icon_font_awesome">&#xf17b;</string> //[http://fontawesome.io/cheatsheet/](http://fontawesome.io/cheatsheet/)
+     <string name="not_allowed_font_awesome">&#xf05e;</string>
   </resources>
+
 ```
-* Now use custom view in activity.xml
+2. Now use custom view in activity.xml
 ```
+
 <com.lmntrx.livin.library.droidawesome.DroidAwesomeAutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,11 +70,24 @@ dependencies {
         android:textColor="#0f0"
         android:gravity="center"
         android:text="@string/android_icon_font_awesome"/>
+
+<com.lmntrx.livin.library.droidawesome.DroidAwesomeImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text="@string/not_allowed_font_awesome"
+        app:textColor="@color/colorAccent"
+        app:textSize="38sp"/>
+
 ```
 
 ### Tip: For smooth rendering in android studio one might have to include [font-awesome.ttf](https://github.com/Livin21/DroidAwesome/blob/master/droid-awesome/src/main/assets/fonts/font-awesome.ttf?raw=true) in assets/fonts/ ###
 
 ## ChangeLog ##
+
+### 1.1.0 ###
+* Added ImageView
+* Added ImageButton
+* Added FloatingActionButton
 
 ### 1.0.1 ###
 * Minor Bug Fix
