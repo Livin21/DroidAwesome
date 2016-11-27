@@ -1,5 +1,5 @@
 # DroidAwesome
-Custom Views that support FontAwesome directly
+![picture alt](https://lh4.googleusercontent.com/aZYMAdUdEazOLA1YN3dJxCu3_p_KOxJBUsbPuCTPJaRj85x-dZdV0f3HIeH1jFVLKfoVcWRK=w1313-h654 "Icon") Custom Views that support FontAwesome directly
 
 ## Views Supported: ##
 * TextView
