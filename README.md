@@ -1,7 +1,7 @@
 # ![picture alt](https://lh4.googleusercontent.com/aZYMAdUdEazOLA1YN3dJxCu3_p_KOxJBUsbPuCTPJaRj85x-dZdV0f3HIeH1jFVLKfoVcWRK=w1313-h654 "Icon") DroidAwesome
 Custom Views that support FontAwesome directly
 
-[ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [ ![Download](https://jitpack.io/v/Livin21/DroidAwesome.svg "jitpack.io") ](https://jitpack.io/#Livin21/DroidAwesome/v1.0.1)
+[ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [ ![Download](https://jitpack.io/v/Livin21/DroidAwesome.svg "jitpack.io") ](https://jitpack.io/#Livin21/DroidAwesome/v1.0.1) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Livin21/droidawesome)
 
 ## Views Supported: ##
 * TextView
@@ -41,14 +41,14 @@ dependencies {
 ```
 
 ## How to use it? ##
-1. Define required icons in res/values/icons.xml
+* Define required icons in res/values/icons.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
   <resources>
      <string name="android_icon_font_awesome">&#xf17b;</string> // http://fontawesome.io/cheatsheet/
   </resources>
 ```
-2. Now use custom view in activity.xml
+* Now use custom view in activity.xml
 ```
 <com.lmntrx.livin.library.droidawesome.DroidAwesomeAutoCompleteTextView
         android:layout_width="wrap_content"
