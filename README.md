@@ -33,7 +33,7 @@ dependencies {
 <dependency>
   <groupId>com.lmntrx.livin.library.droidawesome</groupId>
   <artifactId>droid-awesome</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
@@ -58,8 +58,10 @@ dependencies {
 ```
 
 ## ChangeLog ##
+
 ### 1.0.1 ###
 * Minor Bug Fix
+
 ### 1.0.0 ###
 * Added custom TextView
 * Added custom AutoComplete TextView
