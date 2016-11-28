@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.lmntrx.livin.library.droidawesome.DroidAwesome;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -34,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        MenuItem menuItem = menu.findItem(R.id.action_settings);
+        menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        menuItem.setIcon(DroidAwesome.getFontIcon(this,getString(R.string.fa_settings_gears)));
         return true;
     }
 

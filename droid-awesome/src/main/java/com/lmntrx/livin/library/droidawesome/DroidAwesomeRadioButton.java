@@ -27,21 +27,40 @@ import android.widget.RadioButton;
  */
 
 public class DroidAwesomeRadioButton extends RadioButton {
+
+    /**
+     * @param context context passed
+     */
     public DroidAwesomeRadioButton(Context context) {
         super(context);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     */
     public DroidAwesomeRadioButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     */
     public DroidAwesomeRadioButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     * @param defStyleRes style resource
+     */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeRadioButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);

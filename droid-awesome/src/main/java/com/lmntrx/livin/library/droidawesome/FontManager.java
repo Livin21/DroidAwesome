@@ -33,6 +33,10 @@ class FontManager {
     private static final Hashtable<String, Typeface> cache = new Hashtable<>();
 
 
+    /**
+     * @param context context passed
+     * @return returns TypeFace object from cache
+     */
     static Typeface getTypeface(Context context) {
         synchronized (cache) {
             if (!cache.containsKey(FONT_AWESOME)) {

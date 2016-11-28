@@ -27,21 +27,40 @@ import android.widget.Switch;
  */
 
 public class DroidAwesomeSwitch extends Switch {
+
+    /**
+     * @param context context passed
+     */
     public DroidAwesomeSwitch(Context context) {
         super(context);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     */
     public DroidAwesomeSwitch(Context context, AttributeSet attrs) {
         super(context, attrs);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     */
     public DroidAwesomeSwitch(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     * @param defStyleRes style resource
+     */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeSwitch(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);

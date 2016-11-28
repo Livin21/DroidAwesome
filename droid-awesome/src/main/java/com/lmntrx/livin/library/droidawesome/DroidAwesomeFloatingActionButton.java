@@ -29,21 +29,39 @@ import android.widget.TextView;
  */
 
 public class DroidAwesomeFloatingActionButton extends FloatingActionButton {
+
+    /**
+     * @param context context passed
+     */
     public DroidAwesomeFloatingActionButton(Context context) {
         super(context);
         init(context, null, 0);
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     */
     public DroidAwesomeFloatingActionButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs, 0);
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     */
     public DroidAwesomeFloatingActionButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs, defStyleAttr);
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     */
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs,R.styleable.DroidAwesomeTextDrawable,defStyleAttr,0);
         try{

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="android_icon_font_awesome">&#xf17b;</string>
+    <string name="fa_settings_gears">&#xf085;</string>
 </resources>

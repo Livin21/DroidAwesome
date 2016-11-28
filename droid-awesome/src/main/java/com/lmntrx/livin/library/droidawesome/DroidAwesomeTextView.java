@@ -29,22 +29,40 @@ import android.widget.TextView;
 
 public class DroidAwesomeTextView extends TextView {
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     */
     public DroidAwesomeTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     */
     public DroidAwesomeTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     * @param defStyleRes style resource
+     */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     */
     public DroidAwesomeTextView(Context context) {
         super(context);
         setTypeface(FontManager.getTypeface(context));

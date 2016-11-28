@@ -1,5 +1,5 @@
 # [![icon-96x96.png](https://s18.postimg.org/tboj9r74p/icon_96x96.png)](https://postimg.org/image/efq025vpx/) DroidAwesome
-Custom Views that support FontAwesome directly
+A library to display FontAwesome Icons in any View or a MenuItem
 
 [ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [ ![Download](https://jitpack.io/v/Livin21/DroidAwesome.svg "jitpack.io") ](https://jitpack.io/#Livin21/DroidAwesome/v1.1.0) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Livin21/droidawesome)
 
@@ -15,15 +15,16 @@ Custom Views that support FontAwesome directly
 * ImageView
 * ImageButton
 * FloatingActionButton
+* MenuItem
 
 ## Screenshot ##
-[![Screenshot_1480200614.png](https://s22.postimg.org/sdpaqnqyp/Screenshot_1480200614.png)](https://postimg.org/image/mpizzrmm5/) [![Screenshot_1480244308.png](https://s21.postimg.org/4mk08gn93/Screenshot_1480244308.png)](https://postimg.org/image/nrn9i81wz/)
+[![Screenshot_1480330061.png](https://s16.postimg.org/63vrfifdh/Screenshot_1480330061.png)](https://postimg.org/image/hg8cxao29/) [![Screenshot_1480244308.png](https://s21.postimg.org/4mk08gn93/Screenshot_1480244308.png)](https://postimg.org/image/nrn9i81wz/)
 
 ## Gradle Setup ##
 Add the following code snippet to module/build.gradle
 ```
 dependencies {
-    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.0'
+    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.1'
 }
 ```
 
@@ -33,7 +34,7 @@ dependencies {
 <dependency>
   <groupId>com.lmntrx.livin.library.droidawesome</groupId>
   <artifactId>droid-awesome</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
   <type>pom</type>
 </dependency>
 ```
@@ -45,6 +46,7 @@ dependencies {
   <resources>
      <string name="android_icon_font_awesome">&#xf17b;</string> //http://fontawesome.io/cheatsheet/
      <string name="not_allowed_font_awesome">&#xf05e;</string>
+     <string name="fa_settings_gears">&#xf085;</string>
   </resources>
 ```
 * Now use custom view in activity.xml
@@ -64,10 +66,53 @@ dependencies {
         app:textColor="@color/colorAccent"
         app:textSize="38sp"/>
 ```
+* Or in java file
+```
+DroidAwesomeTextView textView = new DroidAwesomeTextView(context);
+textView.setText(getString(R.string.your_icon_string));
+```
+Or
+```
+//TextView, EditText, Button, etc.
+TextView textView = new TextView(context);
+textView = (TextView)DroidAwesome.setFontIcon(context,textView,context.getString(R.string.your_icon_string));
 
+//Imageview, ImageButton, FloatingActionButton, etc.
+Imageview imageView = new Imageview(context);
+imageView = (Imageview)DroidAwesome.setFontIcon(context,imageView,context.getString(R.string.your_icon_string));
+```
+* To use with menu items
+```
+//XML
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lmntrx.livin.droidawesome.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        />
+</menu>
+
+//Java
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+    // Inflate the menu; this adds items to the action bar if it is present.
+    getMenuInflater().inflate(R.menu.menu_main, menu);
+    MenuItem menuItem = menu.findItem(R.id.action_settings);
+    menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+    menuItem.setIcon(DroidAwesome.getFontIcon(this,getString(	R.string.fa_settings_gears)));
+    return true;
+}
+```
 ### Tip: For smooth rendering in android studio one might have to include [font-awesome.ttf](https://github.com/Livin21/DroidAwesome/blob/master/droid-awesome/src/main/assets/fonts/font-awesome.ttf?raw=true) in assets/fonts/ ###
 
 ## ChangeLog ##
+
+### 1.1.1 ###
+* Add FontAwesome icon programmatically
+* Add FontAwesome icon to a MenuItem 
 
 ### 1.1.0 ###
 * Added ImageView

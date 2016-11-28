@@ -31,27 +31,53 @@ import android.widget.TextView;
  */
 
 public class DroidAwesomeImageButton extends ImageButton {
+
+    /**
+     * @param context context passed
+     */
     public DroidAwesomeImageButton(Context context) {
         super(context);
         init(context,null,0,0);
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     */
     public DroidAwesomeImageButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context,attrs,0,0);
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     */
     public DroidAwesomeImageButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context,attrs,defStyleAttr,0);
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     * @param defStyleRes style resource
+     */
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeImageButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(context,attrs,defStyleAttr,defStyleRes);
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     * @param defStyleRes style resource
+     * init function to avoid repetition
+     */
     private void init(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs,R.styleable.DroidAwesomeTextDrawable,defStyleAttr,defStyleRes);
         try{

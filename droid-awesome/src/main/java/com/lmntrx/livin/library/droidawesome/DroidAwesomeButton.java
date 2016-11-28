@@ -27,21 +27,40 @@ import android.widget.Button;
  */
 
 public class DroidAwesomeButton extends Button {
+
+    /**
+     * @param context context passed
+     */
     public DroidAwesomeButton(Context context) {
         super(context);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     */
     public DroidAwesomeButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     */
     public DroidAwesomeButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     * @param defStyleRes style resource
+     */
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);

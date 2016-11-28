@@ -28,27 +28,53 @@ import android.widget.AutoCompleteTextView;
  */
 
 public class DroidAwesomeAutoCompleteTextView extends AutoCompleteTextView {
+
+    /**
+     * @param context context passed
+     */
     public DroidAwesomeAutoCompleteTextView(Context context) {
         super(context);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     */
     public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     */
     public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     * @param defStyleRes style resource
+     */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         setTypeface(FontManager.getTypeface(context));
     }
 
+    /**
+     * @param context context passed
+     * @param attrs attributes in xml
+     * @param defStyleAttr style attributes
+     * @param defStyleRes style resource
+     * @param popupTheme style popUp theme resource
+     */
     @TargetApi(Build.VERSION_CODES.N)
     public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes, Resources.Theme popupTheme) {
         super(context, attrs, defStyleAttr, defStyleRes, popupTheme);
