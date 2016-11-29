@@ -21,15 +21,20 @@ import android.graphics.Typeface;
 
 import java.util.Hashtable;
 
-/***
+/**
  * Created by livin on 27/11/16.
+ * Copyright 2016 DroidAwesome - Livin Mathew
  */
 
-class FontManager {
+class FontAwesome {
 
+    /* Root Directory. src/main/assets/fonts/ */
     private static final String ROOT = "fonts/";
+
+    /* FontAwesome font file name */
     private static final String FONT_AWESOME = ROOT + "font-awesome.ttf";
 
+    /* Cache Font asset to avoid extra memory head */
     private static final Hashtable<String, Typeface> cache = new Hashtable<>();
 
 
@@ -37,6 +42,7 @@ class FontManager {
      * @param context context passed
      * @return returns TypeFace object from cache
      */
+    /* Returns FontAwesome TypeFace */
     static Typeface getTypeface(Context context) {
         synchronized (cache) {
             if (!cache.containsKey(FONT_AWESOME)) {

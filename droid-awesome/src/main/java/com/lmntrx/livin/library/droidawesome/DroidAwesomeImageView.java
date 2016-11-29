@@ -25,10 +25,15 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/***
+/**
  * Created by livin on 27/11/16.
+ * Copyright 2016 DroidAwesome - Livin Mathew
  */
 
+/**
+ * DroidAwesomeImageView Class. A ImageView subclass with pre set TypeFace to FontAwesome
+ */
+@SuppressWarnings("unused")
 public class DroidAwesomeImageView extends ImageView {
 
     /**
@@ -90,7 +95,7 @@ public class DroidAwesomeImageView extends ImageView {
             else
                 textDrawable.setTextColor(new TextView(context).getTextColors());
             textDrawable.setTextSize(Dimension.SP,textSize);
-            textDrawable.setTypeface(FontManager.getTypeface(context));
+            textDrawable.setTypeface(FontAwesome.getTypeface(context));
             setImageDrawable(textDrawable);
         }finally {
             typedArray.recycle();

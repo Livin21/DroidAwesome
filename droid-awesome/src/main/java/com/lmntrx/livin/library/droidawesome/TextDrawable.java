@@ -15,7 +15,7 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
  * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
@@ -71,7 +71,7 @@ class TextDrawable extends Drawable {
     /* Alignment of the text inside its bounds */
     private Layout.Alignment mTextAlignment = Layout.Alignment.ALIGN_NORMAL;
     /* Optional path on which to draw the text */
-    private Path mTextPath;
+    private Path mTextPath = null;
     /* Stateful text color list */
     private ColorStateList mTextColors;
     /* Container for the bounds to be reported to widgets */
@@ -219,31 +219,6 @@ class TextDrawable extends Drawable {
     }
 
     /**
-     * Return the horizontal stretch factor of the text
-     */
-    public float getTextScaleX() {
-        return mTextPaint.getTextScaleX();
-    }
-
-    /**
-     * Set the horizontal stretch factor of the text
-     * @param size Text scale factor
-     */
-    public void setTextScaleX(float size) {
-        if (size != mTextPaint.getTextScaleX()) {
-            mTextPaint.setTextScaleX(size);
-            measureContent();
-        }
-    }
-
-    /**
-     * Return the current text alignment setting
-     */
-    public Layout.Alignment getTextAlign() {
-        return mTextAlignment;
-    }
-
-    /**
      * Set the text alignment.  The alignment itself is based on the text layout direction.
      * For LTR text NORMAL is left aligned and OPPOSITE is right aligned.
      * For RTL text, those alignments are reversed.
@@ -325,21 +300,6 @@ class TextDrawable extends Drawable {
     public void setTextColor(ColorStateList colorStateList) {
         mTextColors = colorStateList;
         updateTextColors(getState());
-    }
-
-    /**
-     * Optional Path object on which to draw the text.  If this is set,
-     * TextDrawable cannot properly measure the bounds this drawable will need.
-     * You must call {@link #setBounds(int, int, int, int) setBounds()} before
-     * applying this TextDrawable to any View.
-     *
-     * Calling this method with <code>null</code> will remove any Path currently attached.
-     */
-    public void setTextPath(Path path) {
-        if (mTextPath != path) {
-            mTextPath = path;
-            measureContent();
-        }
     }
 
     /**

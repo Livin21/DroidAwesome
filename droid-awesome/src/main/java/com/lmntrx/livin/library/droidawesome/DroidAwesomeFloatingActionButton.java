@@ -24,10 +24,16 @@ import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-/***
+
+/**
  * Created by livin on 27/11/16.
+ * Copyright 2016 DroidAwesome - Livin Mathew
  */
 
+/**
+ * DroidAwesomeFloatingActionButton Class. A FloatingActionButton subclass with pre set TypeFace to FontAwesome
+ */
+@SuppressWarnings("unused")
 public class DroidAwesomeFloatingActionButton extends FloatingActionButton {
 
     /**
@@ -75,7 +81,7 @@ public class DroidAwesomeFloatingActionButton extends FloatingActionButton {
             else
                 textDrawable.setTextColor(new TextView(context).getTextColors());
             textDrawable.setTextSize(Dimension.SP,textSize);
-            textDrawable.setTypeface(FontManager.getTypeface(context));
+            textDrawable.setTypeface(FontAwesome.getTypeface(context));
             setImageDrawable(textDrawable);
         }finally {
             typedArray.recycle();

@@ -22,11 +22,15 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-
-/***
+/**
  * Created by livin on 27/11/16.
+ * Copyright 2016 DroidAwesome - Livin Mathew
  */
 
+/**
+ * DroidAwesomeTextView Class. A TextView subclass with pre set TypeFace to FontAwesome
+ */
+@SuppressWarnings("unused")
 public class DroidAwesomeTextView extends TextView {
 
     /**
@@ -35,7 +39,7 @@ public class DroidAwesomeTextView extends TextView {
      */
     public DroidAwesomeTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -45,7 +49,7 @@ public class DroidAwesomeTextView extends TextView {
      */
     public DroidAwesomeTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -57,7 +61,7 @@ public class DroidAwesomeTextView extends TextView {
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -65,6 +69,6 @@ public class DroidAwesomeTextView extends TextView {
      */
     public DroidAwesomeTextView(Context context) {
         super(context);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 }

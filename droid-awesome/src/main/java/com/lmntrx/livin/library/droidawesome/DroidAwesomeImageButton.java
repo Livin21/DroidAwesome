@@ -26,10 +26,15 @@ import android.util.AttributeSet;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-/***
+/**
  * Created by livin on 27/11/16.
+ * Copyright 2016 DroidAwesome - Livin Mathew
  */
 
+/**
+ * DroidAwesomeImageButton Class. A ImageButton subclass with pre set TypeFace to FontAwesome
+ */
+@SuppressWarnings("unused")
 public class DroidAwesomeImageButton extends ImageButton {
 
     /**
@@ -91,7 +96,7 @@ public class DroidAwesomeImageButton extends ImageButton {
             else
                 textDrawable.setTextColor(new TextView(context).getTextColors());
             textDrawable.setTextSize(Dimension.SP,textSize);
-            textDrawable.setTypeface(FontManager.getTypeface(context));
+            textDrawable.setTypeface(FontAwesome.getTypeface(context));
             setImageDrawable(textDrawable);
         }finally {
             typedArray.recycle();

@@ -22,10 +22,15 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.Switch;
 
-/***
+/**
  * Created by livin on 27/11/16.
+ * Copyright 2016 DroidAwesome - Livin Mathew
  */
 
+/**
+ * DroidAwesomeSwitch Class. A Switch subclass with pre set TypeFace to FontAwesome
+ */
+@SuppressWarnings("unused")
 public class DroidAwesomeSwitch extends Switch {
 
     /**
@@ -33,7 +38,7 @@ public class DroidAwesomeSwitch extends Switch {
      */
     public DroidAwesomeSwitch(Context context) {
         super(context);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -42,7 +47,7 @@ public class DroidAwesomeSwitch extends Switch {
      */
     public DroidAwesomeSwitch(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -52,7 +57,7 @@ public class DroidAwesomeSwitch extends Switch {
      */
     public DroidAwesomeSwitch(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -64,6 +69,6 @@ public class DroidAwesomeSwitch extends Switch {
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeSwitch(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 }

@@ -22,10 +22,15 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.ToggleButton;
 
-/***
+/**
  * Created by livin on 27/11/16.
+ * Copyright 2016 DroidAwesome - Livin Mathew
  */
 
+/**
+ * DroidAwesomeToggleButton Class. A ToggleButton subclass with pre set TypeFace to FontAwesome
+ */
+@SuppressWarnings("unused")
 public class DroidAwesomeToggleButton extends ToggleButton {
 
     /**
@@ -37,7 +42,7 @@ public class DroidAwesomeToggleButton extends ToggleButton {
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeToggleButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -47,7 +52,7 @@ public class DroidAwesomeToggleButton extends ToggleButton {
      */
     public DroidAwesomeToggleButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -56,7 +61,7 @@ public class DroidAwesomeToggleButton extends ToggleButton {
      */
     public DroidAwesomeToggleButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -64,6 +69,6 @@ public class DroidAwesomeToggleButton extends ToggleButton {
      */
     public DroidAwesomeToggleButton(Context context) {
         super(context);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 }

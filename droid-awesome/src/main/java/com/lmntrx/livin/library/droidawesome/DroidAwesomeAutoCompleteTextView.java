@@ -34,7 +34,7 @@ public class DroidAwesomeAutoCompleteTextView extends AutoCompleteTextView {
      */
     public DroidAwesomeAutoCompleteTextView(Context context) {
         super(context);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -43,7 +43,7 @@ public class DroidAwesomeAutoCompleteTextView extends AutoCompleteTextView {
      */
     public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -53,7 +53,7 @@ public class DroidAwesomeAutoCompleteTextView extends AutoCompleteTextView {
      */
     public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -65,7 +65,7 @@ public class DroidAwesomeAutoCompleteTextView extends AutoCompleteTextView {
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -78,6 +78,6 @@ public class DroidAwesomeAutoCompleteTextView extends AutoCompleteTextView {
     @TargetApi(Build.VERSION_CODES.N)
     public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes, Resources.Theme popupTheme) {
         super(context, attrs, defStyleAttr, defStyleRes, popupTheme);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 }

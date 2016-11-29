@@ -22,10 +22,15 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.EditText;
 
-/***
+/**
  * Created by livin on 27/11/16.
+ * Copyright 2016 DroidAwesome - Livin Mathew
  */
 
+/**
+ * DroidAwesomeEditText Class. A EditText subclass with pre set TypeFace to FontAwesome
+ */
+@SuppressWarnings("unused")
 public class DroidAwesomeEditText extends EditText {
 
     /**
@@ -33,7 +38,7 @@ public class DroidAwesomeEditText extends EditText {
      */
     public DroidAwesomeEditText(Context context) {
         super(context);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -42,7 +47,7 @@ public class DroidAwesomeEditText extends EditText {
      */
     public DroidAwesomeEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -52,7 +57,7 @@ public class DroidAwesomeEditText extends EditText {
      */
     public DroidAwesomeEditText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 
     /**
@@ -64,6 +69,6 @@ public class DroidAwesomeEditText extends EditText {
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeEditText(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        setTypeface(FontManager.getTypeface(context));
+        setTypeface(FontAwesome.getTypeface(context));
     }
 }

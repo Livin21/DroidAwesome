@@ -1,7 +1,7 @@
 # [![icon-96x96.png](https://s18.postimg.org/tboj9r74p/icon_96x96.png)](https://postimg.org/image/efq025vpx/) DroidAwesome
 A library to display FontAwesome Icons in any View or a MenuItem
 
-[ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [ ![Download](https://jitpack.io/v/Livin21/DroidAwesome.svg "jitpack.io") ](https://jitpack.io/#Livin21/DroidAwesome/v1.1.0) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Livin21/droidawesome)
+[ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [![](https://jitpack.io/v/Livin21/DroidAwesome.svg)](https://jitpack.io/#Livin21/DroidAwesome) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Livin21/droidawesome)
 
 ## Views Supported: ##
 * TextView
@@ -112,7 +112,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 
 ### 1.1.1 ###
 * Add FontAwesome icon programmatically
-* Add FontAwesome icon to a MenuItem 
+* Added support for MenuItem 
 
 ### 1.1.0 ###
 * Added ImageView
