@@ -22,7 +22,7 @@ A library to display FontAwesome Icons in any View or a MenuItem
 
 ## Gradle Setup ##
 Add the following code snippet to module/build.gradle
-```
+```gradle
 dependencies {
     compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.1'
 }
@@ -40,7 +40,7 @@ dependencies {
 ```
 
 ## How to use it? ##
-1. Define required icons in res/values/icons.xml
+* Define required icons in res/values/icons.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
   <resources>
@@ -66,7 +66,7 @@ dependencies {
         app:textColor="@color/colorAccent"
         app:textSize="38sp"/>
 ```
-1. Or in java file
+* Or in java file
 ```java
 DroidAwesomeTextView textView = new DroidAwesomeTextView(context);
 textView.setText(getString(R.string.your_icon_string));
@@ -81,7 +81,7 @@ textView = (TextView)DroidAwesome.setFontIcon(context,textView,context.getString
 Imageview imageView = new Imageview(context);
 imageView = (Imageview)DroidAwesome.setFontIcon(context,imageView,context.getString(R.string.your_icon_string));
 ```
-1. To use with menu items
+* To use with menu items
 ```xml
 <!--XML-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
