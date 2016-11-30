@@ -30,7 +30,7 @@ dependencies {
 
 
 ## Maven Setup ##
-```
+```xml
 <dependency>
   <groupId>com.lmntrx.livin.library.droidawesome</groupId>
   <artifactId>droid-awesome</artifactId>
@@ -40,8 +40,8 @@ dependencies {
 ```
 
 ## How to use it? ##
-* Define required icons in res/values/icons.xml
-```
+1. Define required icons in res/values/icons.xml
+```xml
 <?xml version="1.0" encoding="utf-8"?>
   <resources>
      <string name="android_icon_font_awesome">&#xf17b;</string> //http://fontawesome.io/cheatsheet/
@@ -50,7 +50,7 @@ dependencies {
   </resources>
 ```
 * Now use custom view in activity.xml
-```
+```xml
 <com.lmntrx.livin.library.droidawesome.DroidAwesomeAutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,13 +66,13 @@ dependencies {
         app:textColor="@color/colorAccent"
         app:textSize="38sp"/>
 ```
-* Or in java file
-```
+1. Or in java file
+```java
 DroidAwesomeTextView textView = new DroidAwesomeTextView(context);
 textView.setText(getString(R.string.your_icon_string));
 ```
 Or
-```
+```java
 //TextView, EditText, Button, etc.
 TextView textView = new TextView(context);
 textView = (TextView)DroidAwesome.setFontIcon(context,textView,context.getString(R.string.your_icon_string));
@@ -81,9 +81,9 @@ textView = (TextView)DroidAwesome.setFontIcon(context,textView,context.getString
 Imageview imageView = new Imageview(context);
 imageView = (Imageview)DroidAwesome.setFontIcon(context,imageView,context.getString(R.string.your_icon_string));
 ```
-* To use with menu items
-```
-//XML
+1. To use with menu items
+```xml
+<!--XML-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -94,7 +94,8 @@ imageView = (Imageview)DroidAwesome.setFontIcon(context,imageView,context.getStr
         android:title="@string/action_settings"
         />
 </menu>
-
+```
+```java
 //Java
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
