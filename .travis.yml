@@ -4,7 +4,7 @@ android:
     # Uncomment the lines below if you want to
     # use the latest revision of Android SDK Tools
     # - platform-tools
-    # - tools
+    - tools
 
     # The BuildTools version used by your project
     - build-tools-25.0.1
@@ -18,11 +18,11 @@ android:
 
     # Specify at least one system image,
     # if you need to run emulator(s) during your tests
-    - sys-img-armeabi-v7a-android-24
-    - sys-img-x86-android-18
+    #- sys-img-armeabi-v7a-android-24
+    #- sys-img-x86-android-18
 jdk:
   - oraclejdk8
 licenses:
-  - 'android-sdk-preview-license-52d11cd2'
-  - 'android-sdk-license-.+'
-  - 'google-gdk-license-.+'
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
