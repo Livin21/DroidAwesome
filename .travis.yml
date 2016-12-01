@@ -18,7 +18,7 @@ android:
 
     # Specify at least one system image,
     # if you need to run emulator(s) during your tests
-    #- sys-img-armeabi-v7a-android-24
+    - sys-img-armeabi-v7a-android-24
     #- sys-img-x86-android-18
 jdk:
   - oraclejdk8
@@ -26,3 +26,8 @@ licenses:
     - 'android-sdk-preview-license-.+'
     - 'android-sdk-license-.+'
     - 'google-gdk-license-.+'
+script:
+    # force init of adb way before any Gradle task that uses ADB; prevents a timeout error that skips emulators of android-24
+    - adb devices
+    # build app and assemble APK, in debug mode
+    - ./gradlew assembleDebug
