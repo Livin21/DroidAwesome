@@ -3,8 +3,6 @@ A library to display FontAwesome Icons in any View or a MenuItem
 
 [ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [![](https://jitpack.io/v/Livin21/DroidAwesome.svg)](https://jitpack.io/#Livin21/DroidAwesome) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Livin21/droidawesome) [![TravisCI](https://api.travis-ci.org/Livin21/DroidAwesome.svg?branch=master)](https://travis-ci.org/Livin21/DroidAwesome)
 
-https://api.travis-ci.org/Livin21/DroidAwesome.svg?branch=master
-
 ## Views Supported: ##
 * TextView
 * AutoComplete TextView
