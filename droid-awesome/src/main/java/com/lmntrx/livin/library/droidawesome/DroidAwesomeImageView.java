@@ -21,6 +21,7 @@ import android.content.res.TypedArray;
 import android.os.Build;
 import android.support.annotation.Dimension;
 import android.support.annotation.RequiresApi;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -87,7 +88,7 @@ public class DroidAwesomeImageView extends ImageView {
         try{
             String text = typedArray.getString(R.styleable.DroidAwesomeTextDrawable_text);
             Float textSize = typedArray.getDimension(R.styleable.DroidAwesomeTextDrawable_textSize,14);
-            int textColor = typedArray.getColor(R.styleable.DroidAwesomeTextDrawable_textColor, 0);
+            int textColor = typedArray.getColor(R.styleable.DroidAwesomeTextDrawable_textColor, ContextCompat.getColor(context,R.color.primary_icon_color));
             TextDrawable textDrawable = new TextDrawable(context);
             textDrawable.setText(text);
             if (textColor!=0)

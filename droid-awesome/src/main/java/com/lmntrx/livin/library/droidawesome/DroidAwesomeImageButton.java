@@ -88,7 +88,7 @@ public class DroidAwesomeImageButton extends ImageButton {
         try{
             String text = typedArray.getString(R.styleable.DroidAwesomeTextDrawable_text);
             Float textSize = typedArray.getDimension(R.styleable.DroidAwesomeTextDrawable_textSize,14);
-            int textColor = typedArray.getColor(R.styleable.DroidAwesomeTextDrawable_textColor, ContextCompat.getColor(context,android.R.color.primary_text_dark));
+            int textColor = typedArray.getColor(R.styleable.DroidAwesomeTextDrawable_textColor, ContextCompat.getColor(context,R.color.primary_icon_color));
             TextDrawable textDrawable = new TextDrawable(context);
             textDrawable.setText(text);
             if (textColor!=0)

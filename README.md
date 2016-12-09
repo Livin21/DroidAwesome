@@ -24,7 +24,7 @@ A library to display FontAwesome Icons in any View or a MenuItem
 Add the following code snippet to module/build.gradle
 ```gradle
 dependencies {
-    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.1'
+    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.2'
 }
 ```
 
@@ -34,7 +34,7 @@ dependencies {
 <dependency>
   <groupId>com.lmntrx.livin.library.droidawesome</groupId>
   <artifactId>droid-awesome</artifactId>
-  <version>1.1.1</version>
+  <version>1.1.2</version>
   <type>pom</type>
 </dependency>
 ```
@@ -110,6 +110,9 @@ public boolean onCreateOptionsMenu(Menu menu) {
 ### Tip: For smooth rendering in android studio one might have to include [font-awesome.ttf](https://github.com/Livin21/DroidAwesome/blob/master/droid-awesome/src/main/assets/fonts/font-awesome.ttf?raw=true) in assets/fonts/ ###
 
 ## ChangeLog ##
+
+### 1.1.2 ###
+* Minor Bug Fix
 
 ### 1.1.1 ###
 * Add FontAwesome icon programmatically
