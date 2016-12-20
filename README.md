@@ -141,7 +141,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 * Added custom Radio Button
 
 ## Credits ##
-Icon was designed by [Aswin CJ](https://github.com/ACJLionsRoar)
+Icon designed by [Aswin CJ](https://github.com/ACJLionsRoar)
 
 [![BehanceProfile](https://s29.postimg.org/4tb0l0q9z/behance.png)](https://www.behance.net/ACJLionsRoar) [![GitHubProfile](https://s27.postimg.org/8a185gi0j/github_logo_2.png)](https://github.com/ACJLionsRoar)
 
