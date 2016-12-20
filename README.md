@@ -24,7 +24,7 @@ A library to display FontAwesome Icons in any View or a MenuItem
 Add the following code snippet to module/build.gradle
 ```gradle
 dependencies {
-    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.2'
+    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.3'
 }
 ```
 
@@ -34,13 +34,13 @@ dependencies {
 <dependency>
   <groupId>com.lmntrx.livin.library.droidawesome</groupId>
   <artifactId>droid-awesome</artifactId>
-  <version>1.1.2</version>
+  <version>1.1.3</version>
   <type>pom</type>
 </dependency>
 ```
 
 ## How to use it? ##
-* Define required icons in res/values/icons.xml
+1. Define required icons in res/values/icons.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
   <resources>
@@ -49,7 +49,7 @@ dependencies {
      <string name="fa_settings_gears">&#xf085;</string>
   </resources>
 ```
-* Now use custom view in activity.xml
+1. Now use custom view in activity.xml
 ```xml
 <com.lmntrx.livin.library.droidawesome.DroidAwesomeAutoCompleteTextView
         android:layout_width="wrap_content"
@@ -81,7 +81,7 @@ textView = (TextView)DroidAwesome.setFontIcon(context,textView,context.getString
 Imageview imageView = new Imageview(context);
 imageView = (Imageview)DroidAwesome.setFontIcon(context,imageView,context.getString(R.string.your_icon_string));
 ```
-* To use with menu items
+1. To use with menu items
 ```xml
 <!--XML-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
@@ -110,6 +110,10 @@ public boolean onCreateOptionsMenu(Menu menu) {
 ### Tip: For smooth rendering in android studio one might have to include [font-awesome.ttf](https://github.com/Livin21/DroidAwesome/blob/master/droid-awesome/src/main/assets/fonts/font-awesome.ttf?raw=true) in assets/fonts/ ###
 
 ## ChangeLog ##
+
+### 1.1.3 ###
+* Minor Bug Fixes
+* Updated build version and support library 
 
 ### 1.1.2 ###
 * Minor Bug Fix
