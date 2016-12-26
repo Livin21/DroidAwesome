@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
     tools:context="com.lmntrx.livin.droidawesome.Main2Activity">
 
     <com.lmntrx.livin.library.droidawesome.DroidAwesomeImageView
@@ -35,5 +36,21 @@
         android:layout_alignParentBottom="true"
         app:textColor="#f0f"
         app:textSize="38sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/textView2"
+        android:text="dummy"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"/>
 
 </RelativeLayout>

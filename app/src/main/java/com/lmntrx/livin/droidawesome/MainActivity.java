@@ -38,7 +38,13 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         MenuItem menuItem = menu.findItem(R.id.action_settings);
         menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-        menuItem.setIcon(DroidAwesome.getFontIcon(this,getString(R.string.fa_settings_gears)));
+        menuItem.setIcon(
+                new DroidAwesome.DrawableBuilder(this)
+                        .icon(getString(R.string.fa_settings_gears))
+                        .color(R.color.colorAccent)
+                        .iconSize(25f)
+                        .build()
+        );
         return true;
     }
 
