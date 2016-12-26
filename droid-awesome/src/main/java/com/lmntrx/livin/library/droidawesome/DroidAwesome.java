@@ -43,7 +43,7 @@ public class DroidAwesome {
      *             a TextView or an ImageView
      * @param iconText FontAwesome icon text
      * @return returns modified view, returns null if the view is incompatible
-     * @deprecated use {@link StringBuilder().#build()} or {@link DrawableBuilder().#build()} instead
+     * @deprecated use StringBuilder.build() or DrawableBuilder.build() instead
      */
     /* Set TypeFace to a View */
     @Deprecated
@@ -70,7 +70,7 @@ public class DroidAwesome {
      * @param iconText FontAwesome icon text
      * @param size icon size
      * @return returns modified view, returns null if the view is incompatible
-     * @deprecated use {@link StringBuilder().#build()} or {@link DrawableBuilder().#build()} instead
+     * @deprecated use StringBuilder.build() or DrawableBuilder.build() instead
      */
     /* Set TypeFace to a View */
     @Deprecated
@@ -100,7 +100,7 @@ public class DroidAwesome {
      * @param size icon size
      * @param colorRes color resource
      * @return returns modified view, returns null if the view is incompatible
-     * @deprecated use {@link StringBuilder().#build()} or {@link DrawableBuilder().#build()} instead
+     * @deprecated use StringBuilder.build() or DrawableBuilder.build() instead
      */
     /* Set TypeFace to a View */
     @Deprecated
@@ -129,7 +129,7 @@ public class DroidAwesome {
      * @param text FontAwesome icon text
      * @param size FontAwesome icon size
      * @return returns a drawable with icon
-     * @deprecated use {@link DrawableBuilder().#build()} instead
+     * @deprecated use DrawableBuilder.build() instead
      */
     /* Get a drawable with icon in it. Useful for MenuItems */
     @Deprecated
@@ -145,7 +145,7 @@ public class DroidAwesome {
      * @param context context passes
      * @param text FontAwesome icon text
      * @return returns a drawable with icon
-     * @deprecated use {@link DrawableBuilder().#build()} instead
+     * @deprecated use DrawableBuilder.build() instead
      */
     /* Get a drawable with icon in it. Useful for MenuItems */
     @Deprecated
@@ -165,7 +165,7 @@ public class DroidAwesome {
      * @param colorRes color resource
      * @param size FontAwesome icon size
      * @return returns a drawable with icon
-     * @deprecated use {@link DrawableBuilder().#build()} instead
+     * @deprecated use DrawableBuilder.build() instead
      */
     /* Get a drawable with icon in it. Useful for MenuItems */
     @Deprecated
@@ -206,6 +206,7 @@ public class DroidAwesome {
 
         /**
          * @param iconText FontAwesome icon text
+         * @return returns DrawableBuilder instance
          */
         public DrawableBuilder icon(String iconText) {
             this.iconText = iconText;
@@ -214,6 +215,7 @@ public class DroidAwesome {
 
         /**
          * @param colorRes color resource
+         * @return returns DrawableBuilder instance
          */
         public DrawableBuilder color(int colorRes) {
             this.colorRes = colorRes;
@@ -222,8 +224,9 @@ public class DroidAwesome {
 
         /**
          * @param iconSize FontAwesome icon size
+         * @return returns DrawableBuilder instance
          */
-        public DrawableBuilder iconSize(float iconSize) {
+        public DrawableBuilder size(float iconSize) {
             this.iconSize = iconSize;
             return this;
         }
@@ -267,6 +270,7 @@ public class DroidAwesome {
 
         /**
          * @param iconText FontAwesome icon text
+         * @return returns StringBuilder instance
          */
         public StringBuilder icon(String iconText) {
             this.iconText = iconText;

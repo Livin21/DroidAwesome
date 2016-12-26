@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 new DroidAwesome.DrawableBuilder(this)
                         .icon(getString(R.string.fa_settings_gears))
                         .color(R.color.colorAccent)
-                        .iconSize(25f)
+                        .size(25f)
                         .build()
         );
         return true;

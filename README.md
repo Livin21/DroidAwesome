@@ -1,4 +1,4 @@
-# [![icon-96x96.png](https://s18.postimg.org/tboj9r74p/icon_96x96.png)](https://postimg.org/image/efq025vpx/) DroidAwesome
+# [![icon-96x96.png](https://s18.postimg.org/tboj9r74p/icon_96x96.png)] DroidAwesome
 A library to display FontAwesome Icons in any View or a MenuItem
 
 [ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [![](https://jitpack.io/v/Livin21/DroidAwesome.svg)](https://jitpack.io/#Livin21/DroidAwesome) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Livin21/droidawesome) [![TravisCI](https://api.travis-ci.org/Livin21/DroidAwesome.svg?branch=master)](https://travis-ci.org/Livin21/DroidAwesome) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-DroidAwesome-yellowgreen.svg?style=flat)](http://android-arsenal.com/details/1/4895)
@@ -18,13 +18,13 @@ A library to display FontAwesome Icons in any View or a MenuItem
 * MenuItem
 
 ## Screenshot ##
-[![Screenshot_1480330061.png](https://s16.postimg.org/63vrfifdh/Screenshot_1480330061.png)](https://postimg.org/image/hg8cxao29/) [![Screenshot_1480244308.png](https://s21.postimg.org/4mk08gn93/Screenshot_1480244308.png)](https://postimg.org/image/nrn9i81wz/)
+[![Screenshot_1480330061.png](https://s16.postimg.org/63vrfifdh/Screenshot_1480330061.png)] [![Screenshot_1480244308.png](https://s21.postimg.org/4mk08gn93/Screenshot_1480244308.png)]
 
 ## Gradle Setup ##
 Add the following code snippet to module/build.gradle
 ```gradle
 dependencies {
-    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.4'
+    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.5'
 }
 ```
 
@@ -34,7 +34,7 @@ dependencies {
 <dependency>
   <groupId>com.lmntrx.livin.library.droidawesome</groupId>
   <artifactId>droid-awesome</artifactId>
-  <version>1.1.4</version>
+  <version>1.1.5</version>
   <type>pom</type>
 </dependency>
 ```
@@ -75,11 +75,21 @@ Or
 ```java
 //TextView, EditText, Button, etc.
 TextView textView = new TextView(context);
-textView = (TextView)DroidAwesome.setFontIcon(context,textView,context.getString(R.string.your_icon_string));
+textView.setText(
+                new DroidAwesome.StringBuilder(this)
+                        .icon(getString(R.string.android_icon_font_awesome)) //icon
+                        .build()
+        );
 
 //Imageview, ImageButton, FloatingActionButton, etc.
 Imageview imageView = new Imageview(context);
-imageView = (Imageview)DroidAwesome.setFontIcon(context,imageView,context.getString(R.string.your_icon_string));
+imageView.setImageDrawable(
+                new DroidAwesome.DrawableBuilder(this)
+                        .color(R.color.colorPrimaryDark) //colorRes
+                        .size(75f) //dimension float (sp)
+                        .icon(getString(R.string.fa_settings_gears)) //icon
+                        .build()
+        );
 ```
 1. To use with menu items
 ```xml
@@ -103,13 +113,23 @@ public boolean onCreateOptionsMenu(Menu menu) {
     getMenuInflater().inflate(R.menu.menu_main, menu);
     MenuItem menuItem = menu.findItem(R.id.action_settings);
     menuItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-    menuItem.setIcon(DroidAwesome.getFontIcon(this,getString(	R.string.fa_settings_gears)));
+    menuItem.setIcon(
+                new DroidAwesome.DrawableBuilder(this)
+                        .icon(getString(R.string.fa_settings_gears)) //icon
+                        .color(R.color.colorAccent) //colorRes
+                        .size(25f) //dimension float (sp)
+                        .build()
+        );
     return true;
 }
 ```
 ### Tip: For smooth rendering in android studio one might have to include [font-awesome.ttf](https://github.com/Livin21/DroidAwesome/blob/master/droid-awesome/src/main/assets/fonts/font-awesome.ttf?raw=true) in assets/fonts/ ###
 
 ## ChangeLog ##
+
+### 1.1.5 ###
+* Added DrawableBuilder and StringBuilder
+* Deprecated setFontIcon() and getFontIcon methods
 
 ### 1.1.4 ###
 * Added setIcon() method to ImageView, ImageButton, FAB

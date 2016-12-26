@@ -32,7 +32,7 @@ public class Main2Activity extends AppCompatActivity {
         imageView.setImageDrawable(
                 new DroidAwesome.DrawableBuilder(this)
                         .color(R.color.colorPrimaryDark)
-                        .iconSize(75f)
+                        .size(75f)
                         .icon(getString(R.string.fa_settings_gears))
                         .build()
         );
