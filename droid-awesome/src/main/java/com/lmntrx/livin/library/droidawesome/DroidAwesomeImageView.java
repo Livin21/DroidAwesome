@@ -102,4 +102,47 @@ public class DroidAwesomeImageView extends ImageView {
             typedArray.recycle();
         }
     }
+
+    /**
+     * @param iconText FontAwesome icon text
+     */
+    public void setIcon(String iconText){
+        setIcon(iconText,0,0);
+    }
+
+    /**
+     * @param iconText FontAwesome icon text
+     * @param iconSizeSP set icon size
+     */
+    public void setIcon(String iconText, float iconSizeSP){
+        setIcon(iconText,iconSizeSP,0);
+    }
+
+    /**
+     * @param iconText FontAwesome icon text
+     * @param iconColorRes set color to icon
+     */
+    public void setIcon(String iconText, int iconColorRes){
+        setIcon(iconText,0,iconColorRes);
+    }
+
+    /**
+     * @param iconText FontAwesome icon text
+     * @param iconColorRes set color to icon
+     * @param iconSizeSP set icon size
+     */
+    public void setIcon(String iconText, float iconSizeSP, int iconColorRes){
+        TextDrawable textDrawable = new TextDrawable(getContext());
+        textDrawable.setText(iconText);
+        if (iconColorRes != 0) {
+            textDrawable.setTextColor(iconColorRes);
+        }else {
+            textDrawable.setTextColor(new TextView(getContext()).getTextColors());
+        }
+        if (iconSizeSP != 0){
+            textDrawable.setTextSize(iconSizeSP);
+        }
+        textDrawable.setTypeface(FontAwesome.getTypeface(getContext()));
+        setImageDrawable(textDrawable);
+    }
 }

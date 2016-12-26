@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:text="&#xf0f3;"
+        android:id="@+id/bell"
         android:layout_centerInParent="true"
         app:textColor="@color/colorPrimaryDark"
         app:textSize="38sp"/>
