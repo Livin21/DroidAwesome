@@ -1,4 +1,4 @@
-# [![icon-96x96.png](https://s18.postimg.org/tboj9r74p/icon_96x96.png)] DroidAwesome
+# ![icon-96x96.png](https://s18.postimg.org/tboj9r74p/icon_96x96.png) DroidAwesome
 A library to display FontAwesome Icons in any View or a MenuItem
 
 [ ![Download](https://api.bintray.com/packages/lmntrx-tech/DroidAwesome/droid-awesome/images/download.svg) ](https://bintray.com/lmntrx-tech/DroidAwesome/droid-awesome/_latestVersion) [![](https://jitpack.io/v/Livin21/DroidAwesome.svg)](https://jitpack.io/#Livin21/DroidAwesome) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Livin21/droidawesome) [![TravisCI](https://api.travis-ci.org/Livin21/DroidAwesome.svg?branch=master)](https://travis-ci.org/Livin21/DroidAwesome) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-DroidAwesome-yellowgreen.svg?style=flat)](http://android-arsenal.com/details/1/4895)
@@ -18,7 +18,7 @@ A library to display FontAwesome Icons in any View or a MenuItem
 * MenuItem
 
 ## Screenshot ##
-[![Screenshot_1480330061.png](https://s16.postimg.org/63vrfifdh/Screenshot_1480330061.png)] [![Screenshot_1480244308.png](https://s21.postimg.org/4mk08gn93/Screenshot_1480244308.png)]
+![Screenshot_1480330061.png](https://s16.postimg.org/63vrfifdh/Screenshot_1480330061.png) ![Screenshot_1480244308.png](https://s21.postimg.org/4mk08gn93/Screenshot_1480244308.png)
 
 ## Gradle Setup ##
 Add the following code snippet to module/build.gradle
