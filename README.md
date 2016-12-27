@@ -40,16 +40,16 @@ dependencies {
 ```
 
 ## How to use it? ##
-1. Define required icons in res/values/icons.xml
+### * Define required icons in res/values/icons.xml ###
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
   <resources>
-     <string name="android_icon_font_awesome">&#xf17b;</string> //http://fontawesome.io/cheatsheet/
-     <string name="not_allowed_font_awesome">&#xf05e;</string>
-     <string name="fa_settings_gears">&#xf085;</string>
+    <string name="android_icon_font_awesome">&#xf17b;</string> //http://fontawesome.io/cheatsheet/
+    <string name="not_allowed_font_awesome">&#xf05e;</string>
+    <string name="fa_settings_gears">&#xf085;</string>
   </resources>
 ```
-1. Now use custom view in activity.xml
+###  * Now use custom view in activity.xml ###
 ```xml
 <com.lmntrx.livin.library.droidawesome.DroidAwesomeAutoCompleteTextView
         android:layout_width="wrap_content"
@@ -91,7 +91,7 @@ imageView.setImageDrawable(
                         .build()
         );
 ```
-1. To use with menu items
+### * To use with menu items ###
 ```xml
 <!--XML-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
