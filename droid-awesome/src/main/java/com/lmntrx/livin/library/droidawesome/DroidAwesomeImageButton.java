@@ -23,6 +23,7 @@ import android.support.annotation.Dimension;
 import android.support.annotation.RequiresApi;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -141,7 +142,7 @@ public class DroidAwesomeImageButton extends ImageButton {
             textDrawable.setTextColor(new TextView(getContext()).getTextColors());
         }
         if (iconSizeSP != 0){
-            textDrawable.setTextSize(iconSizeSP);
+            textDrawable.setTextSize(TypedValue.COMPLEX_UNIT_SP,iconSizeSP);
         }
         textDrawable.setTypeface(FontAwesome.getTypeface(getContext()));
         setImageDrawable(textDrawable);

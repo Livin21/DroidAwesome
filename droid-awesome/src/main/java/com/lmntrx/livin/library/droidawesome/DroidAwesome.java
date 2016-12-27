@@ -240,7 +240,7 @@ public class DroidAwesome {
             if (colorRes != 0)
                 textDrawable.setTextColor(ContextCompat.getColor(context,colorRes));
             if (iconSize != 0)
-                textDrawable.setTextSize(iconSize);
+                textDrawable.setTextSize(TypedValue.COMPLEX_UNIT_SP,iconSize);
             if (iconText != null)
                 textDrawable.setText(iconText);
             return textDrawable;
