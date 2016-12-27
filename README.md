@@ -40,7 +40,7 @@ dependencies {
 ```
 
 ## How to use it? ##
-### * Define required icons in res/values/icons.xml ###
+### Define required icons in res/values/icons.xml ###
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
   <resources>
@@ -49,7 +49,7 @@ dependencies {
     <string name="fa_settings_gears">&#xf085;</string>
   </resources>
 ```
-###  * Now use custom view in activity.xml ###
+### Now use custom view in activity.xml ###
 ```xml
 <com.lmntrx.livin.library.droidawesome.DroidAwesomeAutoCompleteTextView
         android:layout_width="wrap_content"
@@ -91,7 +91,7 @@ imageView.setImageDrawable(
                         .build()
         );
 ```
-### * To use with menu items ###
+### To use with menu items ###
 ```xml
 <!--XML-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
