@@ -229,7 +229,7 @@ class TextDrawable extends Drawable {
      *   {@link Layout.Alignment#ALIGN_OPPOSITE}.
      */
     void setTextAlign(Layout.Alignment align) {
-        if (mTextAlignment != align) {
+        if (!mTextAlignment.equals(align)) {
             mTextAlignment = align;
             measureContent();
         }

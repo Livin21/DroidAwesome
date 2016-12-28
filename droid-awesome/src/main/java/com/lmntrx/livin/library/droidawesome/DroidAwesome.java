@@ -185,16 +185,16 @@ public class DroidAwesome {
     public static class DrawableBuilder {
 
         /* FontAwesome icon special character */
-        String iconText;
+        private String iconText;
 
         /* icon color */
-        int colorRes;
+        private int colorRes;
 
         /* icon size */
-        float iconSize;
+        private float iconSize;
 
         /* context */
-        Context context;
+        private Context context;
 
 
         /**
@@ -256,10 +256,10 @@ public class DroidAwesome {
     public static class StringBuilder {
 
         /* FontAwesome icon special character */
-        String iconText;
+        private String iconText;
 
         /* context */
-        Context context;
+        private Context context;
 
         /**
          * @param context context passed

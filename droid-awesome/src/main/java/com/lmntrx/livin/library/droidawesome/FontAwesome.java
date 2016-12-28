@@ -43,7 +43,7 @@ class FontAwesome {
      * @return returns TypeFace object from cache
      */
     /* Returns FontAwesome TypeFace */
-    static Typeface getTypeface(Context context) {
+    public static Typeface getTypeface(Context context) {
         synchronized (cache) {
             if (!cache.containsKey(FONT_AWESOME)) {
                 cache.put(FONT_AWESOME,Typeface.createFromAsset(context.getAssets(), FONT_AWESOME));
