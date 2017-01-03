@@ -31,8 +31,10 @@ class FontAwesome {
     /* Root Directory. src/main/assets/fonts/ */
     private static final String ROOT = "fonts/";
 
+    static String FILE_NAME = "font-awesome.ttf";
+
     /* FontAwesome font file name */
-    private static final String FONT_AWESOME = ROOT + "font-awesome.ttf";
+    private static final String FONT_AWESOME = ROOT + FILE_NAME;
 
     /* Cache Font asset to avoid extra memory head */
     private static final Hashtable<String, Typeface> cache = new Hashtable<>();
