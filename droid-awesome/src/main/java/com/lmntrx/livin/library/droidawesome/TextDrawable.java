@@ -55,7 +55,7 @@ import android.util.TypedValue;
  * {@link #setBounds(android.graphics.Rect) setBounds()} to provide the Drawable
  * size based on the Path constraints.
  */
-class TextDrawable extends Drawable {
+public class TextDrawable extends Drawable {
 
     /* Platform XML constants for typeface */
     private static final int SANS = 1;
@@ -91,7 +91,7 @@ class TextDrawable extends Drawable {
     };
 
 
-    TextDrawable(Context context) {
+    public TextDrawable(Context context) {
         super();
         //Used to load and scale resource items
         mResources = context.getResources();
@@ -201,7 +201,7 @@ class TextDrawable extends Drawable {
      * @param unit Units for the text size, such as dp or sp
      * @param size Text size value
      */
-    void setTextSize(int unit, float size) {
+    public void setTextSize(int unit, float size) {
         float dimension = TypedValue.applyDimension(unit, size,
                 mResources.getDisplayMetrics());
         setRawTextSize(dimension);
@@ -242,7 +242,7 @@ class TextDrawable extends Drawable {
      * {@link #setTypeface(Typeface, int)} to get the appearance
      * that you actually want.
      */
-    void setTypeface(Typeface tf) {
+    public void setTypeface(Typeface tf) {
         if (mTextPaint.getTypeface() != tf) {
             mTextPaint.setTypeface(tf);
             measureContent();
@@ -289,7 +289,7 @@ class TextDrawable extends Drawable {
      * Set a single text color for all states
      * @param color Color value such as {@link Color#WHITE} or {@link Color#argb(int, int, int, int)}
      */
-    void setTextColor(int color) {
+    public void setTextColor(int color) {
         setTextColor(ColorStateList.valueOf(color));
     }
 

@@ -70,7 +70,7 @@ public class DroidAwesomeFloatingActionButton extends FloatingActionButton {
      * @param defStyleAttr style attributes
      */
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
-        TypedArray typedArray = context.obtainStyledAttributes(attrs,R.styleable.DroidAwesomeTextDrawable,defStyleAttr,0);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DroidAwesomeTextDrawable,defStyleAttr,0);
         try{
             String text = typedArray.getString(R.styleable.DroidAwesomeTextDrawable_text);
             Float textSize = typedArray.getDimension(R.styleable.DroidAwesomeTextDrawable_textSize,14);

@@ -26,7 +26,7 @@ import java.util.Hashtable;
  * Copyright 2016 DroidAwesome - Livin Mathew
  */
 
-class FontAwesome {
+public class FontAwesome {
 
     /* Root Directory. src/main/assets/fonts/ */
     private static final String ROOT = "fonts/";

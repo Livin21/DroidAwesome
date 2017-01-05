@@ -9,10 +9,10 @@ import android.text.style.MetricAffectingSpan;
  * Created by livin on 26/12/16.
  */
 
-class CustomTypefaceSpan extends MetricAffectingSpan {
+public class CustomTypefaceSpan extends MetricAffectingSpan {
     private final Typeface typeface;
 
-    CustomTypefaceSpan(final Typeface typeface) {
+    public CustomTypefaceSpan(final Typeface typeface) {
         this.typeface = typeface;
     }
 

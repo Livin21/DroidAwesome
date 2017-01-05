@@ -85,7 +85,7 @@ public class DroidAwesomeImageView extends ImageView {
      * init function to avoid repetition
      */
     private void init(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        TypedArray typedArray = context.obtainStyledAttributes(attrs,R.styleable.DroidAwesomeTextDrawable,defStyleAttr,defStyleRes);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.DroidAwesomeTextDrawable,defStyleAttr,defStyleRes);
         try{
             String text = typedArray.getString(R.styleable.DroidAwesomeTextDrawable_text);
             Float textSize = typedArray.getDimension(R.styleable.DroidAwesomeTextDrawable_textSize,14);
