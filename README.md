@@ -123,12 +123,12 @@ public boolean onCreateOptionsMenu(Menu menu) {
     return true;
 }
 ```
-### Tip: For smooth rendering in android studio one might have to include [font-awesome.ttf](https://github.com/Livin21/DroidAwesome/blob/master/droid-awesome/src/main/assets/fonts/font-awesome.ttf?raw=true) in assets/fonts/ ###
-You can change font file name as follows:
+*Tip: For smooth rendering in android studio one might have to include [font-awesome.ttf](https://github.com/Livin21/DroidAwesome/blob/master/droid-awesome/src/main/assets/fonts/font-awesome.ttf?raw=true) in assets/fonts/*
+*You can change font file name as follows:*
 ```java
   DroidAwesome.setFontFileName("my-font.ttf");
 ``` 
-Set font filename in onCreate() of your activity file
+*Set font filename in onCreate() of your activity file*
 
 ## ChangeLog ##
 
