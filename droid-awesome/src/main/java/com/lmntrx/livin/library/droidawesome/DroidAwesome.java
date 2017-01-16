@@ -295,14 +295,14 @@ public class DroidAwesome {
 
     }
 
-
-    /**
+/*
+    *//**
      * @param name new filename for font file
-     */
-    /* Change font file name */
+     *//*
+    *//* Change font file name *//*
     public static void setFontFileName(String name){
         FontAwesome.FILE_NAME = name;
-    }
+    }*/
 
 
 }

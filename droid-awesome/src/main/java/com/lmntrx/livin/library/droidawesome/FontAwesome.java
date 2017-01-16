@@ -1,12 +1,12 @@
 /**
  * Copyright 2016 DroidAwesome - Livin Mathew
- *
+ * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
+ * <p>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p>
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -17,8 +17,14 @@
 package com.lmntrx.livin.library.droidawesome;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Typeface;
 
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Hashtable;
 
 /**
@@ -31,7 +37,7 @@ public class FontAwesome {
     /* Root Directory. src/main/assets/fonts/ */
     private static final String ROOT = "fonts/";
 
-    static String FILE_NAME = "font-awesome.ttf";
+    private static String FILE_NAME = "font_awesome.ttf";
 
     /* FontAwesome font file name */
     private static final String FONT_AWESOME = ROOT + FILE_NAME;
@@ -48,10 +54,38 @@ public class FontAwesome {
     public static Typeface getTypeface(Context context) {
         synchronized (cache) {
             if (!cache.containsKey(FONT_AWESOME)) {
-                cache.put(FONT_AWESOME,Typeface.createFromAsset(context.getAssets(), FONT_AWESOME));
+                cache.put(FONT_AWESOME, processFontFromRaw(context));
             }
             return cache.get(FONT_AWESOME);
         }
+    }
+
+    private static Typeface processFontFromRaw(Context context) {
+        Typeface typeface = null;
+        InputStream inputStream = null;
+
+        String outPath = context.getCacheDir() + "/tmp" + System.currentTimeMillis() + ".raw";
+
+        try {
+            inputStream = context.getResources().openRawResource(R.raw.font_awesome);
+        } catch (Resources.NotFoundException ignored) {
+        }
+
+        try {
+            assert inputStream != null;
+            byte[] buffer = new byte[inputStream.available()];
+            BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(outPath));
+            int num;
+            while ((num = inputStream.read(buffer)) > 0) {
+                stream.write(buffer, 0, num);
+            }
+            stream.close();
+            typeface = Typeface.createFromFile(outPath);
+            new File(outPath).delete();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return typeface;
     }
 }
 
