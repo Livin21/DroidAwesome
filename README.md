@@ -24,7 +24,7 @@ A library to display FontAwesome Icons in any View or a MenuItem
 Add the following code snippet to module/build.gradle
 ```gradle
 dependencies {
-    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.8'
+    compile 'com.lmntrx.livin.library.droidawesome:droid-awesome:1.1.9'
 }
 ```
 
@@ -34,7 +34,7 @@ dependencies {
 <dependency>
   <groupId>com.lmntrx.livin.library.droidawesome</groupId>
   <artifactId>droid-awesome</artifactId>
-  <version>1.1.8</version>
+  <version>1.1.9</version>
   <type>pom</type>
 </dependency>
 ```
@@ -51,6 +51,7 @@ dependencies {
 ```
 ### Now use custom view in activity.xml ###
 ```xml
+<!-- Icons do not render in android studio render sandbox. Run project in an emulator to see changes -->
 <com.lmntrx.livin.library.droidawesome.DroidAwesomeAutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -123,14 +124,12 @@ public boolean onCreateOptionsMenu(Menu menu) {
     return true;
 }
 ```
-*Tip: For smooth rendering in android studio one might have to include [font-awesome.ttf](https://github.com/Livin21/DroidAwesome/blob/master/droid-awesome/src/main/assets/fonts/font-awesome.ttf?raw=true) in assets/fonts/*
-*You can change font file name as follows:*
-```java
-  DroidAwesome.setFontFileName("my-font.ttf");
-``` 
-*Set font filename in onCreate() of your activity file*
 
 ## ChangeLog ##
+
+### 1.1.9 ###
+* Removed use of font file from assets
+* Removed setFontFile() method
 
 ### 1.1.8 ###
 * Minor Bug Fixes

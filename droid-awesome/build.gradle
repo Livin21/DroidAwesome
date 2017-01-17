@@ -9,13 +9,14 @@ android {
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
-        versionName "1.1.8"
+        versionName "1.1.9"
 
     }
 
     lintOptions {
         abortOnError false
     }
+
 
     buildTypes {
         release {
@@ -31,7 +32,7 @@ publish {
     groupId = 'com.lmntrx.livin.library.droidawesome'
     repoName = 'DroidAwesome'
     artifactId = 'droid-awesome'
-    publishVersion = '1.1.8'
+    publishVersion = '1.1.9'
     desc = 'A library to display FontAwesome Icons in any View or a MenuItem'
     website = 'https://github.com/Livin21/DroidAwesome'
 }
