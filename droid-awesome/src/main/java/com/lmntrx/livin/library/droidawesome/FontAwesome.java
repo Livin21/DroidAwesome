@@ -19,6 +19,7 @@ package com.lmntrx.livin.library.droidawesome;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Typeface;
+import android.util.Log;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -55,6 +56,8 @@ public class FontAwesome {
         synchronized (cache) {
             if (!cache.containsKey(FONT_AWESOME)) {
                 cache.put(FONT_AWESOME, processFontFromRaw(context));
+            }else {
+                Log.i(FontAwesome.class.getSimpleName(),"Loading typeface from cache");
             }
             return cache.get(FONT_AWESOME);
         }
@@ -81,7 +84,9 @@ public class FontAwesome {
             }
             stream.close();
             typeface = Typeface.createFromFile(outPath);
-            new File(outPath).delete();
+            if (new File(outPath).delete()){
+                Log.i(FontAwesome.class.getSimpleName(),"Deleted " + outPath);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
