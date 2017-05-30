@@ -20,7 +20,6 @@ import android.content.Context;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
-import android.widget.Button;
 
 /**
  * Created by livin on 27/11/16.
@@ -31,7 +30,7 @@ import android.widget.Button;
  * DroidAwesomeButton Class. A Button subclass with pre set TypeFace to FontAwesome
  */
 @SuppressWarnings("unused")
-public class DroidAwesomeButton extends Button {
+public class DroidAwesomeButton extends android.support.v7.widget.AppCompatButton {
 
     /**
      * @param context context passed
@@ -68,7 +67,7 @@ public class DroidAwesomeButton extends Button {
      */
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
+        super(context, attrs, defStyleAttr);
         setTypeface(FontAwesome.getTypeface(context));
     }
 }

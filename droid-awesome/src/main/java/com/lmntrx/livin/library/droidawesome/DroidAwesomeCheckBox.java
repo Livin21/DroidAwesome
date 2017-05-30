@@ -16,11 +16,8 @@
 
 package com.lmntrx.livin.library.droidawesome;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
 import android.util.AttributeSet;
-import android.widget.CheckBox;
 
 /**
  * Created by livin on 27/11/16.
@@ -31,7 +28,7 @@ import android.widget.CheckBox;
  * DroidAwesomeCheckBox Class. A CheckBox subclass with pre set TypeFace to FontAwesome
  */
 @SuppressWarnings("unused")
-public class DroidAwesomeCheckBox extends CheckBox {
+public class DroidAwesomeCheckBox extends android.support.v7.widget.AppCompatCheckBox {
 
     /**
      * @param context context passed
@@ -57,18 +54,6 @@ public class DroidAwesomeCheckBox extends CheckBox {
      */
     public DroidAwesomeCheckBox(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setTypeface(FontAwesome.getTypeface(context));
-    }
-
-    /**
-     * @param context context passed
-     * @param attrs attributes in xml
-     * @param defStyleAttr style attributes
-     * @param defStyleRes style resource
-     */
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public DroidAwesomeCheckBox(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
         setTypeface(FontAwesome.getTypeface(context));
     }
 }

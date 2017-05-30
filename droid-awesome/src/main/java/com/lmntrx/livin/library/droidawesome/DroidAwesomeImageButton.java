@@ -36,7 +36,7 @@ import android.widget.TextView;
  * DroidAwesomeImageButton Class. A ImageButton subclass with pre set TypeFace to FontAwesome
  */
 @SuppressWarnings("unused")
-public class DroidAwesomeImageButton extends ImageButton {
+public class DroidAwesomeImageButton extends android.support.v7.widget.AppCompatImageButton {
 
     /**
      * @param context context passed
@@ -63,18 +63,6 @@ public class DroidAwesomeImageButton extends ImageButton {
     public DroidAwesomeImageButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context,attrs,defStyleAttr,0);
-    }
-
-    /**
-     * @param context context passed
-     * @param attrs attributes in xml
-     * @param defStyleAttr style attributes
-     * @param defStyleRes style resource
-     */
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public DroidAwesomeImageButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        init(context,attrs,defStyleAttr,defStyleRes);
     }
 
     /**

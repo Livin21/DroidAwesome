@@ -24,7 +24,6 @@ import android.support.annotation.RequiresApi;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.TypedValue;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -33,10 +32,10 @@ import android.widget.TextView;
  */
 
 /**
- * DroidAwesomeImageView Class. A ImageView subclass with pre set TypeFace to FontAwesome
+ * DroidAwesomeImageView Class. An ImageView subclass with pre set TypeFace to FontAwesome
  */
 @SuppressWarnings("unused")
-public class DroidAwesomeImageView extends ImageView {
+public class DroidAwesomeImageView extends android.support.v7.widget.AppCompatImageView {
 
     /**
      * @param context context passed
@@ -73,7 +72,7 @@ public class DroidAwesomeImageView extends ImageView {
      */
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public DroidAwesomeImageView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
+        super(context, attrs, defStyleAttr);
         init(context,attrs,defStyleAttr,defStyleRes);
     }
 

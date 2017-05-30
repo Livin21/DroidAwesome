@@ -16,18 +16,14 @@
 
 package com.lmntrx.livin.library.droidawesome;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.content.res.Resources;
-import android.os.Build;
 import android.util.AttributeSet;
-import android.widget.AutoCompleteTextView;
 
 /***
  * Created by livin on 27/11/16.
  */
 
-public class DroidAwesomeAutoCompleteTextView extends AutoCompleteTextView {
+public class DroidAwesomeAutoCompleteTextView extends android.support.v7.widget.AppCompatAutoCompleteTextView {
 
     /**
      * @param context context passed
@@ -53,31 +49,6 @@ public class DroidAwesomeAutoCompleteTextView extends AutoCompleteTextView {
      */
     public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setTypeface(FontAwesome.getTypeface(context));
-    }
-
-    /**
-     * @param context context passed
-     * @param attrs attributes in xml
-     * @param defStyleAttr style attributes
-     * @param defStyleRes style resource
-     */
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        setTypeface(FontAwesome.getTypeface(context));
-    }
-
-    /**
-     * @param context context passed
-     * @param attrs attributes in xml
-     * @param defStyleAttr style attributes
-     * @param defStyleRes style resource
-     * @param popupTheme style popUp theme resource
-     */
-    @TargetApi(Build.VERSION_CODES.N)
-    public DroidAwesomeAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes, Resources.Theme popupTheme) {
-        super(context, attrs, defStyleAttr, defStyleRes, popupTheme);
         setTypeface(FontAwesome.getTypeface(context));
     }
 }
