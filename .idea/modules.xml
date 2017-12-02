@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DroidAwesome.iml" filepath="$PROJECT_DIR$/DroidAwesome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DroidAwesome.iml" filepath="$PROJECT_DIR$/DroidAwesome.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/droid-awesome/droid-awesome.iml" filepath="$PROJECT_DIR$/droid-awesome/droid-awesome.iml" />
       <module fileurl="file://$PROJECT_DIR$/droid-awesome/droid-awesome.iml" filepath="$PROJECT_DIR$/droid-awesome/droid-awesome.iml" />
     </modules>
   </component>
